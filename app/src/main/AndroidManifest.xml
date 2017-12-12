@@ -2,11 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.red.dargon.nsbaseproject">
 
-        <!--android:theme="@style/AppTheme"-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN"/>-->
-                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
-            <!--</intent-filter>-->
     <application
         android:allowBackup="true"
         android:supportsRtl="true"
