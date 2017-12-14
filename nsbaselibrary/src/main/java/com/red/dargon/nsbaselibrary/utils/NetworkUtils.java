@@ -7,9 +7,6 @@ import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.telephony.TelephonyManager;
 
-
-import com.red.dargon.nsbaselibrary.base.BaseApplication;
-
 import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
@@ -77,8 +74,8 @@ public class NetworkUtils {
      * @return {@code true}: 是<br>
      * {@code false}: 否
      */
-    public static boolean isConnected() {
-        NetworkInfo info = getActiveNetworkInfo(BaseApplication.getApplicationInstance());
+    public static boolean isConnected(Context context) {
+        NetworkInfo info = getActiveNetworkInfo(context);
         return info != null && info.isConnected();
     }
 

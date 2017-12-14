@@ -14,7 +14,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Xml;
 
-import com.red.dargon.nsbaselibrary.base.BaseApplication;
 import com.red.dargon.nsbaselibrary.utils.Utils;
 
 import org.xmlpull.v1.XmlSerializer;
@@ -403,11 +402,9 @@ public final class PhoneUtils {
     }
 
     @SuppressLint("HardwareIds")
-    public static String getOwnPhone() {
-        TelephonyManager telephonyManager = (TelephonyManager) BaseApplication.getApplicationInstance()
-                .getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
+    public static String getOwnPhone(Context context) {
+        TelephonyManager telephonyManager = (TelephonyManager) context.getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
         return telephonyManager.getLine1Number();
-//        return telephonyManager.getGroupIdLevel1();
 
     }
 

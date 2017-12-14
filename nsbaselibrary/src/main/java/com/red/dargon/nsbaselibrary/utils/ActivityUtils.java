@@ -21,7 +21,6 @@ public class ActivityUtils {
     /**
      * 添加一个Activity到堆栈中
      *
-     * @param activity
      */
     public static void addActivity(Activity activity) {
         if (null == mActivityStack) {
@@ -37,7 +36,6 @@ public class ActivityUtils {
     /**
      * 从堆栈中移除指定的Activity
      *
-     * @param activity
      */
     public static void removeActivity(Activity activity) {
         if (activity != null && mActivityStack != null) {
@@ -76,7 +74,6 @@ public class ActivityUtils {
     /**
      * 获取顶部的Activity
      *
-     * @return
      */
     public static Activity getTopActivity() {
         if (mActivityStack == null || mActivityStack.isEmpty()) {

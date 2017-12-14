@@ -6,8 +6,6 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.text.TextUtils;
 
-import com.red.dargon.nsbaselibrary.base.BaseApplication;
-
 
 /**
  * 版本相关工具类
@@ -19,11 +17,11 @@ public class VersionUtils {
         throw new IllegalArgumentException("cannot create VersionUtils constructor!");
     }
 
-    public static PackageInfo getPackageInfo() {
+    public static PackageInfo getPackageInfo(Context context) {
         PackageInfo info = null;
         try {
-            PackageManager manager = BaseApplication.getApplicationInstance().getPackageManager();
-            info = manager.getPackageInfo(BaseApplication.getApplicationInstance().getPackageName(), PackageManager.GET_CONFIGURATIONS);
+            PackageManager manager = context.getPackageManager();
+            info = manager.getPackageInfo(context.getPackageName(), PackageManager.GET_CONFIGURATIONS);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
@@ -31,8 +29,8 @@ public class VersionUtils {
         return info;
     }
 
-    public static String getPackageName() {
-        PackageInfo packageInfo = getPackageInfo();
+    public static String getPackageName(Context context) {
+        PackageInfo packageInfo = getPackageInfo(context);
         if (packageInfo == null) {
             return "";
         }
@@ -44,8 +42,8 @@ public class VersionUtils {
      *
      * @return 版本名
      */
-    public static String getVersionName() {
-        PackageInfo packageInfo = getPackageInfo();
+    public static String getVersionName(Context context) {
+        PackageInfo packageInfo = getPackageInfo(context);
         if (packageInfo == null) {
             return "";
         }
@@ -57,8 +55,8 @@ public class VersionUtils {
      *
      * @return 版本号
      */
-    public static int getVersionCode() {
-        PackageInfo packageInfo = getPackageInfo();
+    public static int getVersionCode(Context context) {
+        PackageInfo packageInfo = getPackageInfo(context);
         if (packageInfo == null) {
             return -1;
         }
