@@ -10,7 +10,7 @@ import android.support.multidex.MultiDexApplication;
  * Created by dargon on 2017/6/20.
  */
 
-public class NSBaseApplication extends MultiDexApplication {
+public class BaseApplication extends MultiDexApplication {
     private static Context applicationContext;
     private static Handler applicationHandler;
 
