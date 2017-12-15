@@ -80,12 +80,6 @@ public class PageLoadingUtils implements DialogInterface.OnCancelListener, Dialo
         }
         mDialog.setOnCancelListener(this);
         mDialog.setOnDismissListener(this);
-        LogUtils.d("888888", PhoneManagerUtils.getTelPhoneSystem());
-//        if (StringUtils.equals(PhoneManagerUtils.SYS_EMUI, PhoneManagerUtils.getTelPhoneSystem())) {
-//            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-//            layoutParams.setMargins(0,0,0,UIUtils.dp2px(50));
-//            flContent.setLayoutParams(layoutParams);
-//        }
 
     }
 
@@ -171,17 +165,17 @@ public class PageLoadingUtils implements DialogInterface.OnCancelListener, Dialo
         @Override
         public void run() {
             // TODO: 2017/12/15 等移过来后 打开屏蔽
-//            if (mDialog != null
-//                    && mContext != null
+            if (mDialog != null
+                    && mContext != null
 //                    && mContext instanceof BaseActivity
 //                    && !((BaseActivity) mContext).isFinishing()
-//                    && mDialog.isShowing()
-//                    && isNetResponse) {
-//                if (iv_loadImage != null) {
-//                    Glide.clear(iv_loadImage);
-//                }
-//                mDialog.dismiss();
-//            }
+                    && mDialog.isShowing()
+                    && isNetResponse) {
+                if (iv_loadImage != null) {
+                    Glide.clear(iv_loadImage);
+                }
+                mDialog.dismiss();
+            }
         }
     }
 }
