@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="anim_page_dialog" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_alpha_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_alpha_exit</item>
+    </style>
+</resources>

@@ -1,4 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="tw_ui_theme_color_main">#ff7173</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_text_default">#8a000000</color>
+
+
+    <!--====================================马甲包替换=====================================================-->
+    <!--主颜色  以便马甲包替换 -->
+    <color name="tw_ui_theme_color_main">@color/tw_ui_ff7173</color>
+    <color name="tw_ui_theme_color_minor">@color/tw_ui_8094cc</color>
+    <!--各个界面的 状态栏渐变色  -->
+    <color name="tw_ui_fea16e">#fea16e</color>
+    <color name="tw_ui_fe776b">#fe776b</color>
+    <color name="tw_ui_ff6567">#ff6567</color>
+    <!--另外首页特殊处理  还需要再去处理下-->
+    <!--=========================================================================================-->
+
+
+    <color name="gray_level_1">#999999</color>
+    <color name="gray_level_2">#7C7F99</color>
+    <color name="gray_level_3">#FF575757</color>
+    <color name="gray_level_4">#B4B4B4</color>
+
+
+    <color name="black_level_1">#FF231815</color>
+    <color name="black_level_2">#FF2E2E2E</color>
+    <color name="black_level_3">#3c3a39</color>
+    <color name="black_level_4">#FF231815</color>
+
+    <color name="blue_level_1">#506286</color>
+    <color name="blue_level_2">#FF7C7F99</color>
+    <color name="blue_level_3">#FF6B8DD0</color>
+    <color name="blue_level_4">#FFD8D8D8</color>
+    <color name="blue_level_5">#fbfbfc</color>
+    <color name="blue_level_6">#FF484C65</color>
+    <color name="blue_level_7">#272536</color>
+
+    <color name="orange_level_1">#FFFF8955</color>
+    <color name="tw_ui_f1f3f6">#f1f3f6</color>
+
+    <color name="tw_ui_c2c3d1">#c2c3d1</color>
+    <color name="tw_ui_506286">#506286</color>
+    <color name="tw_ui_f1f5fb">#F1F5FB</color>
+
+
+    <color name="tw_ui_ff7173">#ff7173</color>
+    <color name="tw_ui_8094cc">#8094cc</color>
+    <color name="tw_ui_bg_color">#f1f3f6</color>
+    <color name="tw_ui_9aa4be">#9aa4be</color>
+    <color name="tw_ui_030303">#030303</color>
+    <color name="tw_ui_ee5f61">#ee5f61</color>
+    <color name="transparent">@android:color/transparent</color>
 </resources>
