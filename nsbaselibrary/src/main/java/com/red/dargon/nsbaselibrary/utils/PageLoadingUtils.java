@@ -19,6 +19,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.red.dargon.nsbaselibrary.R;
+import com.red.dargon.nsbaselibrary.base.BaseActivity;
 import com.red.dargon.nsbaselibrary.constant.BaseConstant;
 
 
@@ -167,8 +168,8 @@ public class PageLoadingUtils implements DialogInterface.OnCancelListener, Dialo
             // TODO: 2017/12/15 等移过来后 打开屏蔽
             if (mDialog != null
                     && mContext != null
-//                    && mContext instanceof BaseActivity
-//                    && !((BaseActivity) mContext).isFinishing()
+                    && mContext instanceof BaseActivity
+                    && !((BaseActivity) mContext).isFinishing()
                     && mDialog.isShowing()
                     && isNetResponse) {
                 if (iv_loadImage != null) {
