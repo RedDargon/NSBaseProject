@@ -68,7 +68,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         initPresenter();
         ActivityUtils.showCurrentActTasks();
         initView(savedInstanceState);
-
+ 
     }
 
     /**
