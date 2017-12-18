@@ -121,9 +121,9 @@ public class PageLoadingUtils implements DialogInterface.OnCancelListener, Dialo
         }
         long currentTimeMillis = System.currentTimeMillis();
         if (mDialog != null && mDialog.isShowing() && (currentTimeMillis - showTime > TIME_DISMISS_DEFAULT)) {
-            if (iv_loadImage != null) {
-                Glide.clear(iv_loadImage);
-            }
+//            if (iv_loadImage != null) {
+//                Glide.clear(iv_loadImage);
+//            }
             mDialog.dismiss();
         }
     }
@@ -135,9 +135,9 @@ public class PageLoadingUtils implements DialogInterface.OnCancelListener, Dialo
         try {
 
             if (mDialog != null) {
-                if (iv_loadImage != null) {
-                    Glide.clear(iv_loadImage);
-                }
+//                if (iv_loadImage != null) {
+//                    Glide.clear(iv_loadImage);
+//                }
                 mDialog.dismiss();
             }
         } catch (Exception e) {
@@ -172,9 +172,9 @@ public class PageLoadingUtils implements DialogInterface.OnCancelListener, Dialo
                     && !((BaseActivity) mContext).isFinishing()
                     && mDialog.isShowing()
                     && isNetResponse) {
-                if (iv_loadImage != null) {
-                    Glide.clear(iv_loadImage);
-                }
+//                if (iv_loadImage != null) {
+//                    Glide.clear(iv_loadImage);
+//                }
                 mDialog.dismiss();
             }
         }
